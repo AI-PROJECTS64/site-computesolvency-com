@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ComputeSolvency.com — Concept Note</title>
+  <meta name="description" content="Concept Note — ComputeSolvency.com. Descriptive digital asset for the emerging notion of compute solvency: GPU/CPU capacity, cloud concentration, data center resilience, cyber risk and cost trajectories, seen through a solvency and governance lens." />
+
+  <link rel="canonical" href="https://www.computesolvency.com/concept-note.html" />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+
+  <meta property="og:title" content="ComputeSolvency.com — Concept Note" />
+  <meta property="og:description" content="Framing “compute solvency” as a governance topic linking compute, resilience, cost and solvency for boards, risk and technology leaders." />
+  <meta property="og:url" content="https://www.computesolvency.com/concept-note.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="https://www.computesolvency.com/og.jpg" />
+  <meta property="og:image:alt" content="ComputeSolvency.com — digital asset for compute & solvency" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://www.computesolvency.com/og.jpg" />
+
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+  <style>
+    :root{
+      --bg:#020815;
+      --card:#081120;
+      --muted:#8791b0;
+      --text:#e8eefc;
+      --accent:#7fd0ff;
+      --chip:#101b34;
+      --shadow:0 10px 30px rgba(0,0,0,.45);
+      --radius:18px
+    }
+    *{box-sizing:border-box}
+    html,body{
+      margin:0;
+      padding:0;
+      background:var(--bg);
+      color:var(--text);
+      font:15px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Inter,Ubuntu,Arial,sans-serif
+    }
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:1040px;margin:0 auto;padding:28px}
+    .topbar{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      margin:8px 0 22px
+    }
+    .badge{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      background:var(--chip);
+      border:1px solid #1d2946;
+      border-radius:999px;
+      padding:6px 12px;
+      color:#c1ccec;
+      font-size:13px
+    }
+    .lang{
+      gap:10px;
+      display:flex;
+      align-items:center
+    }
+    .lang button{
+      background:var(--chip);
+      color:var(--text);
+      border:1px solid #1d2946;
+      padding:7px 12px;
+      border-radius:999px;
+      cursor:pointer
+    }
+    .lang button[aria-pressed="true"]{
+      background:var(--accent);
+      color:#020815;
+      border-color:transparent
+    }
+    .card{
+      background:var(--card);
+      border:1px solid #1d2946;
+      border-radius:var(--radius);
+      padding:26px;
+      box-shadow:var(--shadow);
+      margin-bottom:18px
+    }
+    h1,h2,h3{margin-top:0}
+    .muted{color:var(--muted)}
+    .chip{
+      display:inline-block;
+      background:var(--chip);
+      border:1px solid #1d2946;
+      border-radius:999px;
+      padding:4px 10px;
+      font-size:12px;
+      color:#c1ccec;
+      margin:2px 4px 2px 0
+    }
+    .list{margin:8px 0;display:grid;gap:8px}
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      background:#122143;
+      color:#fff;
+      border:1px solid #21325b;
+      padding:11px 16px;
+      border-radius:999px;
+      cursor:pointer;
+      text-decoration:none;
+      font-size:14px
+    }
+    .btn.primary{
+      background:var(--accent);
+      color:#020815;
+      border-color:transparent
+    }
+    .foot{opacity:.8;font-size:13px;margin-top:18px}
+    @media (max-width:860px){
+      h1{font-size:28px}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="topbar">
+      <div class="badge">ComputeSolvency.com — Concept Note</div>
+      <div class="lang">
+        <button id="btn-fr" aria-pressed="false">FR</button>
+        <button id="btn-en" aria-pressed="true">EN</button>
+      </div>
+    </div>
+
+    <!-- ================= EN SECTION ================= -->
+    <section class="card" data-en>
+      <h1>ComputeSolvency.com — Concept Note</h1>
+      <p class="muted">
+        This Concept Note is a <b>high-level framing</b> of what “compute solvency” can mean
+        for boards, risk committees and technology leaders. It does <b>not</b> describe any
+        specific product, methodology or service, and does not constitute advice of any kind.
+      </p>
+      <p>
+        Over the last decade, compute has moved from being a “technical resource” to becoming
+        a <b>systemic dependency</b> for entire economies:
+      </p>
+      <div class="list">
+        <div class="chip">Hyperscaler concentration & cloud dependency</div>
+        <div class="chip">GPU/CPU bottlenecks for AI and high-performance workloads</div>
+        <div class="chip">Data center resilience, energy constraints and location risk</div>
+        <div class="chip">Cybersecurity, ransomware and supply-chain attacks</div>
+        <div class="chip">Cloud cost volatility & opaque pricing models</div>
+      </div>
+      <p>
+        In this context, <b>compute solvency</b> can be read as a simple question:
+        <i>“Can we secure the compute we need, at an acceptable risk and cost, in a way that
+        remains compatible with our long-term solvency and regulatory expectations?”</i>
+      </p>
+    </section>
+
+    <section class="card" data-en>
+      <h2>1. From technical capacity to solvency-relevant exposure</h2>
+      <p>
+        For many organisations, compute is now deeply intertwined with <b>revenue generation</b>,
+        <b>operational continuity</b> and <b>regulatory compliance</b>. Several patterns make it
+        relevant to solvency discussions:
+      </p>
+      <div class="list">
+        <p><span class="chip">1.1 Revenue & business continuity dependency</span></p>
+        <p class="muted">
+          Customer onboarding, digital channels, core operations, risk models and reporting chains
+          are all increasingly dependent on cloud and data center infrastructures. A severe outage,
+          loss of environment or extended capacity shortage can propagate quickly into business
+          interruption, lost revenue and reputational damage.
+        </p>
+
+        <p><span class="chip">1.2 Cost trajectories and margin pressure</span></p>
+        <p class="muted">
+          As AI and data-intensive workloads grow, compute costs can become a material part of
+          operating expenses. Poorly governed architectures, inefficient workloads or unfavourable
+          commercial conditions can erode margins and weaken resilience to shocks.
+        </p>
+
+        <p><span class="chip">1.3 Concentration and correlation risk</span></p>
+        <p class="muted">
+          Dependency on a small set of providers, regions or architectures may create single points
+          of failure. In extreme scenarios, several critical customers, sectors or even countries
+          can be impacted at the same time by an outage or a cyber event.
+        </p>
+      </div>
+    </section>
+
+    <section class="card" data-en>
+      <h2>2. What a “Compute Solvency Framework” could look like</h2>
+      <p class="muted">
+        The actual design of a “Compute Solvency Framework” depends entirely on the acquiring entity,
+        its risk appetite, regulatory context and internal governance. The following points are
+        <b>illustrative only</b>, as examples of how the wording could be used in practice.
+      </p>
+      <div class="list">
+        <p><span class="chip">2.1 Inventory & mapping</span></p>
+        <p class="muted">
+          Mapping critical services, applications and processes to their underlying compute
+          dependencies (cloud services, regions, data centers, on-prem infrastructure,
+          shared platforms, key vendors).
+        </p>
+
+        <p><span class="chip">2.2 Scenarios & stress-testing</span></p>
+        <p class="muted">
+          Exploring scenarios that combine capacity shocks (GPU/CPU shortages, energy constraints),
+          price shocks (unexpected cost increases or changes in pricing models) and cyber incidents
+          (environment loss, data corruption, privilege abuse).
+        </p>
+
+        <p><span class="chip">2.3 Governance & decision-making</span></p>
+        <p class="muted">
+          Bringing together technology, risk, finance and business stakeholders around a shared
+          language: when and how compute-related decisions can affect solvency, capital allocation,
+          provisioning, disclosures or communications with supervisors.
+        </p>
+
+        <p><span class="chip">2.4 Indicators & dashboards</span></p>
+        <p class="muted">
+          Designing indicators that are readable at board / executive level, without exposing
+          sensitive details: diversification, resilience posture, cost trajectory, dependency
+          on individual providers or technologies.
+        </p>
+      </div>
+    </section>
+
+    <section class="card" data-en>
+      <h2>3. Position of ComputeSolvency.com</h2>
+      <p>
+        <b>ComputeSolvency.com</b> is positioned purely as a <b>descriptive semantic asset</b>:
+        a neutral banner that can be used to name a framework, an observatory or a cross-functional
+        programme. It does not, by itself, define any standard, metric or methodology.
+      </p>
+      <p class="muted">
+        Any future acquirer remains entirely responsible for:
+      </p>
+      <ul class="muted">
+        <li>Defining its own methodologies, indicators and governance choices;</li>
+        <li>Ensuring compliance with applicable laws, regulations and supervisory expectations;</li>
+        <li>Designing and validating any models, tools or scenarios associated with the concept;</li>
+        <li>Managing operational, cyber, financial and legal risks related to compute.</li>
+      </ul>
+      <p class="muted foot">
+        <b>Disclaimer:</b> This Concept Note is <b>informational only</b>. It is not a technical,
+        legal, financial, regulatory or risk-management recommendation, and should not be relied upon
+        for decision-making. No warranty is given, and no responsibility is accepted, for any use made
+        of these ideas by third parties.
+      </p>
+      <div style="margin-top:14px">
+        <a class="btn" href="/index.html">← Back to main page</a>
+        <a class="btn primary" href="mailto:contact@computesolvency.com?subject=ComputeSolvency.com%20-%20Contact">
+          Contact: contact@computesolvency.com
+        </a>
+      </div>
+    </section>
+
+    <!-- ================= FR SECTION ================= -->
+    <section class="card" data-fr hidden>
+      <h1>ComputeSolvency.com — Note de concept</h1>
+      <p class="muted">
+        Cette Note de concept propose un <b>cadre de lecture</b> de la notion de
+        « compute solvency » pour les conseils d’administration, comités des risques
+        et directions technologiques. Elle ne décrit <b>aucun produit, standard ou service</b>
+        spécifique et ne constitue en aucun cas un avis ou une recommandation.
+      </p>
+      <p>
+        Le compute est progressivement passé du statut de « ressource technique »
+        à celui de <b>dépendance systémique</b> pour de nombreux secteurs :
+      </p>
+      <div class="list">
+        <div class="chip">Concentration sur quelques hyperscalers & dépendance au cloud</div>
+        <div class="chip">Tension sur les GPU/CPU pour l’IA et les workloads intensifs</div>
+        <div class="chip">Résilience des data centers, contraintes énergétiques & risques de localisation</div>
+        <div class="chip">Cybersécurité, ransomware, attaques sur la supply chain logicielle</div>
+        <div class="chip">Volatilité des coûts cloud & modèles tarifaires complexes</div>
+      </div>
+      <p>
+        Dans ce contexte, la question de la <b>compute solvency</b> peut se résumer ainsi :
+        <i>« Sommes-nous capables de sécuriser le compute dont nous avons besoin, à un niveau de
+        risque et de coût compatible avec notre solvabilité à long terme et nos contraintes
+        réglementaires&nbsp;? »</i>
+      </p>
+    </section>
+
+    <section class="card" data-fr hidden>
+      <h2>1. Du capacity planning à une exposition liée à la solvabilité</h2>
+      <p>
+        Pour de nombreuses organisations, le compute est aujourd’hui imbriqué dans la
+        <b>génération de revenus</b>, la <b>continuité d’activité</b> et la
+        <b>conformité réglementaire</b>. Plusieurs dynamiques peuvent le rendre pertinent
+        au regard de la solvabilité :
+      </p>
+      <div class="list">
+        <p><span class="chip">1.1 Dépendance au chiffre d’affaires & à la continuité</span></p>
+        <p class="muted">
+          Onboarding client, canaux digitaux, opérations cœur de métier, modèles de risques,
+          chaînes de reporting : beaucoup reposent désormais sur des infrastructures cloud
+          et data centers. Une indisponibilité prolongée, une perte d’environnement ou une
+          pénurie de capacité peuvent se traduire en interruption d’activité, perte de revenus
+          et atteinte à la réputation.
+        </p>
+
+        <p><span class="chip">1.2 Trajectoires de coûts & pression sur les marges</span></p>
+        <p class="muted">
+          Avec la montée des workloads IA et data-intensifs, les coûts de compute peuvent devenir
+          un poste significatif d’OPEX. Des architectures mal gouvernées, des workloads peu efficaces
+          ou des conditions commerciales défavorables peuvent peser sur les marges et réduire
+          la capacité d’absorption de chocs.
+        </p>
+
+        <p><span class="chip">1.3 Risques de concentration & de corrélation</span></p>
+        <p class="muted">
+          Une forte dépendance à un nombre limité de fournisseurs, de régions ou d’architectures
+          crée des points de défaillance uniques. Dans des scénarios extrêmes, plusieurs clients
+          critiques, secteurs ou pays peuvent être affectés simultanément par un incident majeur
+          (panne, cyberattaque, rupture de service).
+        </p>
+      </div>
+    </section>
+
+    <section class="card" data-fr hidden>
+      <h2>2. À quoi pourrait ressembler un « Compute Solvency Framework »</h2>
+      <p class="muted">
+        La conception concrète d’un « Compute Solvency Framework » dépend entièrement
+        de l’acquéreur, de son appétit au risque, de son contexte réglementaire et
+        de sa gouvernance interne. Les points ci-dessous sont <b>illustratifs uniquement</b>,
+        à titre d’exemples d’usages possibles du terme.
+      </p>
+      <div class="list">
+        <p><span class="chip">2.1 Inventaire & cartographie</span></p>
+        <p class="muted">
+          Cartographier les services, applications et processus critiques et les relier
+          à leurs dépendances de compute (services cloud, régions, data centers,
+          infrastructures on-premise, plateformes partagées, fournisseurs clés).
+        </p>
+
+        <p><span class="chip">2.2 Scénarios & stress-tests</span></p>
+        <p class="muted">
+          Explorer des scénarios combinant des chocs de capacité (pénurie GPU/CPU, contraintes
+          énergétiques), des chocs de prix (hausse imprévue, changement de modèle tarifaire)
+          et des incidents cyber (perte d’environnement, corruption de données, compromission
+          d’identifiants).
+        </p>
+
+        <p><span class="chip">2.3 Gouvernance & décisions</span></p>
+        <p class="muted">
+          Mettre autour de la table les fonctions technologiques, risques, finances
+          et métiers, avec un langage commun : à quel moment et comment les décisions
+          liées au compute peuvent-elles impacter la solvabilité, l’allocation de capital,
+          la provision, la communication avec les autorités ou les marchés&nbsp;?
+        </p>
+
+        <p><span class="chip">2.4 Indicateurs & tableaux de bord</span></p>
+        <p class="muted">
+          Concevoir des indicateurs lisibles au niveau du conseil / comité des risques,
+          sans exposer de détails sensibles&nbsp;: diversification, posture de résilience,
+          trajectoires de coûts, dépendance à certains fournisseurs ou technologies.
+        </p>
+      </div>
+    </section>
+
+    <section class="card" data-fr hidden>
+      <h2>3. Positionnement de ComputeSolvency.com</h2>
+      <p>
+        <b>ComputeSolvency.com</b> se positionne strictement comme un <b>actif sémantique descriptif</b> :
+        une bannière neutre pour nommer un cadre, un observatoire ou un programme transverse.
+        Il ne définit, en lui-même, <b>aucune norme, métrique ou méthode</b>.
+      </p>
+      <p class="muted">
+        Tout acquéreur demeure entièrement responsable de&nbsp;:
+      </p>
+      <ul class="muted">
+        <li>Définir ses propres méthodologies, indicateurs et choix de gouvernance ;</li>
+        <li>Assurer le respect des lois, réglementations et attentes des superviseurs ;</li>
+        <li>Concevoir et valider tout modèle, outil ou scénario associé au concept ;</li>
+        <li>Gérer les risques opérationnels, cyber, financiers et juridiques liés au compute.</li>
+      </ul>
+      <p class="muted foot">
+        <b>Avertissement :</b> cette Note de concept est fournie à <b>titre purement informatif</b>.
+        Elle ne constitue ni un avis technique, ni un conseil juridique, financier, réglementaire
+        ou de gestion des risques, et ne doit pas être utilisée comme base de décision.
+        Aucune garantie n’est donnée et aucune responsabilité n’est acceptée quant aux usages
+        qui pourraient en être faits par des tiers.
+      </p>
+      <div style="margin-top:14px">
+        <a class="btn" href="/index.html">← Retour à la page principale</a>
+        <a class="btn primary" href="mailto:contact@computesolvency.com?subject=ComputeSolvency.com%20-%20Contact">
+          Contact : contact@computesolvency.com
+        </a>
+      </div>
+    </section>
+
+    <p class="foot muted">
+      © ComputeSolvency.com — Concept Note. Descriptive use only. No cloud, rating, advisory or regulatory service is provided.
+    </p>
+  </div>
+
+  <script>
+    const frBtn = document.getElementById('btn-fr');
+    const enBtn = document.getElementById('btn-en');
+    const show = (lang) => {
+      document.querySelectorAll('[data-fr]').forEach(n => n.hidden = (lang !== 'fr'));
+      document.querySelectorAll('[data-en]').forEach(n => n.hidden = (lang !== 'en'));
+      frBtn.setAttribute('aria-pressed', String(lang === 'fr'));
+      enBtn.setAttribute('aria-pressed', String(lang === 'en'));
+      document.documentElement.lang = lang;
+    };
+    frBtn.addEventListener('click', () => show('fr'));
+    enBtn.addEventListener('click', () => show('en'));
+    show('en');
+  </script>
+</body>
+</html>
